@@ -20,11 +20,11 @@
 <body>
     <nav class="navbar bg-light">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">Navbar</span>
+            <span class="navbar-brand mb-0 h1">Resume Builder</span>
         </div>
-      </nav>
-    <form>
-        <div class="row justify-content-center">
+    </nav>
+    <form class="mt-5">
+        <div class="row justify-content-center mb-5">
             <div class="col-auto">
                 <table class="table table-responsive">
                     <tbody id="tableToModify">
@@ -64,28 +64,24 @@
                             <th>Certificate : </th>
                             <td>
                                 <input class="form-control certificate" type="text" required />
-                                <button type="button" class="btn btn-warning m-2" onclick="addCertificate()">Add</button>
                             </td>
                         </tr>
                         <tr id="aresaofinerestCloneModel">
                             <th>Area of Inerest : </th>
                             <td>
                                 <input type="text" class="form-control areaofinerest" required />
-                                <button type="button" class="btn btn-warning m-2" onclick="addAreaofinterrest()">Add</button>
                             </td>
                         </tr>
                         <tr id="projectundertakenCloneModel">
                             <th>Project Under Taken : </th>
                             <td>
                                 <input type="text" class="form-control projectundertaken" required />
-                                <button type="button" class="btn btn-warning m-2" onclick="addProjectUnderTaken()">Add</button>
                             </td>
                         </tr>
                         <tr id="workExperienceCloneModel">
                             <th>Work Experience : </th>
                             <td>
                                 <input type="text" class="form-control workExperience" required />
-                                <button type="button" class="btn btn-warning m-2" onclick="addWorkExperience()">Add</button>
                             </td>
                         </tr>
                         <tr>
@@ -96,14 +92,12 @@
                             <th>Key strengths : </th>
                             <td>
                                 <input type="text" class="form-control keyStrengths" required />
-                                <button type="button" class="btn btn-warning m-2" onclick="addKeystrengths()">Add</button>
                             </td>
                         </tr>
                         <tr id="academicCredentialsCloneModel">
                             <th>Academic Credentials : </th>
                             <td>
                                 <input type="text" class="form-control academicCredentials" required />
-                                <button type="button" class="btn btn-warning m-2" onclick="addAcademicCredentials()">Add</button>
                             </td>
                         </tr>
                         <tr>
@@ -163,9 +157,10 @@
                         </tr>
                     </tbody>
                 </table>
+                <button type="submit" class="btn btn-success">Download</button>
             </div>
         </div>
-
+        
     </form>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
